@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Language Resources | Nora Nora Yitong Qiu</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+<nav id="navbar">
+  <div class="nav-inner">
+    <a href="../index.html" class="nav-name">Nora Yitong Qiu</a>
+    <button class="nav-toggle" aria-label="Menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="../index.html#about">About</a></li>
+      <li><a href="../index.html#research">Research</a></li>
+      <li><a href="../index.html#publications">Publications</a></li>
+      <li><a href="../index.html#presentations">Presentations</a></li>
+      <li><a href="../index.html#teaching">Teaching</a></li>
+      <li><a href="../index.html#leadership">Leadership</a></li>
+      <li><a href="../index.html#resources">Resources</a></li>
+      <li><a href="../index.html#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="page-header fade-in"><h1>Language Resources</h1></div>
+<section class="fade-in">
+<div class="resource-section">
+<h2>Academic English Writing</h2>
+<ul>
+<li>Pinker, Steven. <em>The Sense of Style: The Thinking Person&rsquo;s Guide to Writing in the 21st Century</em>. Penguin Books, 2015.</li>
+<li>Strunk, William, and E. B. White. <em>The Elements of Style</em>. 2nd ed. New York: Macmillan, 1972.</li>
+<li>Bailey, S. <em>Academic Writing: A Handbook for International Students</em>. London and New York: Routledge, 2015.</li>
+<li>Craswell, G. <em>Writing for Academic Success</em>. Sage Publications, 2004.</li>
+<li>Murray, N. <em>Writing Essays in English Language and Linguistics</em>. Cambridge University Press, 2012.</li>
+<li>Creme, P. and M. Lea. <em>Writing at University: A Guide for Students</em>. Open University Press, 2008.</li>
+<li>Jordan, R.R. <em>Academic Writing Course</em>. London: Nelson/Longman, 1999.</li>
+<li>Hamp-Lyons, L. and B. Heasley. <em>Study Writing</em>. Cambridge University Press, 2006.</li>
+<li>Oshima, A. and A. Hogue. <em>Writing Academic English</em>. Addison-Wesley, New York, 2005.</li>
+<li>Swales, J. and C. Feak. <em>Academic Writing for Graduate Students: Essential Skills and Tasks</em>. Michigan University Press, 2012.</li>
+</ul>
+</div>
+<div class="resource-section">
+<h2>Language Centres in London</h2>
+<ul class="resource-link-list">
+<li><a href="https://www.lse.ac.uk/language-centre">LSE Language Centre</a> &mdash; Arabic, French, German, Italian, Japanese, Korean, Mandarin, Russian, Spanish</li>
+<li><a href="https://www.soas.ac.uk/study/language-centre/language-short-course-catalogue">SOAS Language Centre</a> &mdash; Arabic, Bengali, Chinese, Filipino, Hebrew, Hindi, Indonesian, Japanese, Korean, Persian, Sanskrit, Sinhala, Swahili, Tamil, Thai, Tibetan, Turkish, Urdu, Vietnamese, Yor&ugrave;b&aacute;</li>
+</ul>
+</div>
+<div class="resource-section">
+<h2>Nora&rsquo;s Guide to Academic Writing Q and A</h2>
+<p>A comprehensive guide covering sentence craft, verb selection, paragraph structure, rhythm, clarity, precision, evidence analysis, journal article and book writing, and the differences between A Level, newspaper, and top-tier academic prose.</p>
+<ul>
+<li><a href="Guide_to_Academic_Writing_fin.pdf" target="_blank">Download the Guide (PDF)</a></li>
+</ul>
+</div>
+</section>
+<footer>&copy; 2026 Nora Yitong Qiu</footer>
+<script>
+window.addEventListener('scroll',()=>{document.getElementById('navbar').classList.toggle('scrolled',window.scrollY>20)});
+const obs=new IntersectionObserver(e=>{e.forEach(el=>{if(el.isIntersecting)el.target.classList.add('visible')})},{threshold:0.1});
+document.querySelectorAll('.fade-in').forEach(el=>{obs.observe(el);el.classList.add('visible');});
+document.querySelectorAll('.nav-links a').forEach(a=>{a.addEventListener('click',()=>document.querySelector('.nav-links').classList.remove('open'))});
+</script>
+</body>
+</html>
